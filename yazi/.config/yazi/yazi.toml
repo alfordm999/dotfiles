@@ -1,0 +1,16 @@
+"$schema" = "https://yazi-rs.github.io/schemas/yazi.json"
+"$EDITOR" = "nvim"
+[manager]
+ratio = [1, 3, 4]
+sort_by = "natural"
+sort_dir_first = true
+show_hidden = true
+
+[opener]
+folder = [
+  { run = '$EDITOR "$@"', block = true, orphan = true, desc = "$EDITOR", for = "linux" },
+]
+text = [
+  { run = '$EDITOR "$@"', block = true, orphan = true, desc = "$EDITOR", for = "linux" },
+  { run = '$EDITOR "$@"', block = true, orphan = true, desc = "$EDITOR", for = "linux" },
+]
