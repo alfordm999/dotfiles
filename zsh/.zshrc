@@ -10,10 +10,10 @@ alias cz='nvim $(fzf -m --preview="bat --color=always {}")'
 alias scz='sudo nvim $(sudo fzf -m --preview="bat --color=always {}")'
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
-alias cd = 'z'
 _comp_options+=(globdots)   #include hidden files
 
 #ZOXIDE
+alias cd=z
 eval "$(zoxide init zsh)"
 
 #FZF STUFF
