@@ -8,7 +8,7 @@ show_hidden = true
 
 [opener]
 folder = [
-  { run = '$EDITOR "$@"', block = true, orphan = true, desc = "$EDITOR", for = "linux" },
+  { run = 'zoxide "$@"', block = true, orphan = true, desc = "z", for = "linux" },
 ]
 text = [
   { run = '$EDITOR "$@"', block = true, orphan = true, desc = "$EDITOR", for = "linux" },
