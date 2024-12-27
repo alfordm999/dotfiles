@@ -16,11 +16,8 @@
         "memory",
         "cpu",
         "network",
-        "backlight",
         "pulseaudio#input",
         "pulseaudio#output",
-        "pipewire",
-        "backlight",
         "custom/brightness",
         "custom/power"
 
@@ -36,14 +33,6 @@
             "default": ""
         }
     },
-    "wlr/taskbar": {
-        "format": "{icon}",
-        "on-click": "activate",
-        "on-click-right": "fullscreen",
-        "icon-theme": "WhiteSur",
-        "icon-size": 25,
-        "tooltip-format": "{title}"
-    },
     "memory": {
         "interval": 5,
         "format": "󰍛 {}%",
@@ -54,17 +43,13 @@
         "format": "󰍛 {}%",
         "max-length": 10
     },
-    "backlight": {
-        "format": "{percent}% {icon}",
-        "format-icons": ["", "", "", "", "", "", "", "", ""]
-    },
     "tray": {
         "spacing": 10
     },
     "clock": {
         "tooltip-format": "{calendar}",
         "format-alt": "{:%a, %d %b %Y}",
-        "format": "{:%I:%M %p}"
+        "format": " {:%I:%M %p %d/%m/%Y}"
     },
     "network": {
         "format-wifi" : "{icon}",
