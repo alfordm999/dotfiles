@@ -7,7 +7,7 @@ export EDITOR="nvim"
 
 #ALIASES
 alias cz='nvim $(fzf -m --preview="bat --color=always {}")'
-alias scz='sudo nvim $(sudo fzf -m --preview="bat --color=always {}")'
+alias scz='sudo nvim $(fzf -m --preview="bat --color=always {}")'
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
 alias nord='sudo systemctl start nordvpnd && nordvpn c Chicago'
