@@ -117,10 +117,5 @@
             "type": "custom",
             "format": "\u001b[90m└────────────────────────────────────────────────────┘"
         },
-        {
-          "type": "colors",
-          "key": "{#separator}│",
-          "symbol": "circle"
-        },
     ]
 }
