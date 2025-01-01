@@ -13,11 +13,9 @@
 
         "tray",
         "clock",
-        "memory",
         "cpu",
         "backlight",
         "network",
-        "pulseaudio#input",
         "pulseaudio#output",
         "battery",
         "custom/power"

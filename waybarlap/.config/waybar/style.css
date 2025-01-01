@@ -62,6 +62,7 @@
   #pulseaudio,
   #network,
   #clock,
+  #backlight,
 
   #tray {
     border-radius: 4px;
@@ -112,6 +113,7 @@
 
 #backlight {
   background-color: #fab387;
+    padding: 6px 8px;
 }
   #network {
     background-color: #94e2d5;
