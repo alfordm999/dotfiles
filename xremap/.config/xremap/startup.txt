@@ -1,0 +1,2 @@
+sudo gpasswd -a miles input
+echo 'KERNEL=="uinput", GROUP="input", TAG+="uaccess"' | sudo tee /etc/udev/rules.d/input.rules
