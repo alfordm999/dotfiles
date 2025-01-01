@@ -94,7 +94,25 @@
   #pulseaudio {
     background-color: #e4d6ff;
   }
-  
+  #battery {
+  background-color: #f38ba8;
+}
+
+#battery.warning,
+#battery.critical,
+#battery.urgent {
+  background-color: #ff0000;
+  color: #FFFF00;
+}
+
+#battery.charging {
+  background-color: #a6e3a1;
+  color: #181825;
+}
+
+#backlight {
+  background-color: #fab387;
+}
   #network {
     background-color: #94e2d5;
     padding-right: 17px;

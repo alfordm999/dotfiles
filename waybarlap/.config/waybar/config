@@ -19,6 +19,7 @@
         "network",
         "pulseaudio#input",
         "pulseaudio#output",
+        "battery",
         "custom/power"
 
     ],
@@ -89,6 +90,42 @@
         "smooth-scrolling-threshold": 1,
         "on-click": "pavucontrol",
         "on-click-middle": "pavucontrol"
+    },
+        "battery": {
+        "format": "{capacity}% {icon}",
+        "format-icons": {
+            "charging": [
+                "󰢜",
+                "󰂆",
+                "󰂇",
+                "󰂈",
+                "󰢝",
+                "󰂉",
+                "󰢞",
+                "󰂊",
+                "󰂋",
+                "󰂅"
+            ],
+            "default": [
+                "󰁺",
+                "󰁻",
+                "󰁼",
+                "󰁽",
+                "󰁾",
+                "󰁿",
+                "󰂀",
+                "󰂁",
+                "󰂂",
+                "󰁹"
+            ]
+        },
+        "format-full": "Charged ",
+        "interval": 5,
+        "states": {
+            "warning": 20,
+            "critical": 10
+        },
+        "tooltip": false
     },
     "custom/power": {
         "format": "",
