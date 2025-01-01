@@ -127,6 +127,13 @@
         },
         "tooltip": false
     },
+        "backlight": {
+        "device": "intel_backlight",
+        "format": "{icon} {percent}%",
+        "format-icons": ["☀️", ""],
+        "on-scroll-down": "brightnessctl -c backlight set 1%-",
+        "on-scroll-up": "brightnessctl -c backlight set +1%"
+    },
     "custom/power": {
         "format": "",
         "tooltip": false,
