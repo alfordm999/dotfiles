@@ -6,7 +6,7 @@ export ZSH="$HOME/.oh-my-zsh"
 export EDITOR="nvim"
 
 #ALIASES
-alias cz='nvim $(fzf -m --preview="bat --color=always {}")'
+alias cz='yazi $(fzf -m --preview="bat --color=always {}")'
 alias scz='sudo nvim $(fzf -m --preview="bat --color=always {}")'
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
@@ -21,6 +21,9 @@ eval "$(zoxide init zsh)"
 eval "$(fzf --zsh)"
 export FZF_DEFAULT_COMMAND="fd --hidden --strip-cwd-prefix --exclude .git "
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
+
+#ATUIN
+eval "$(atuin init zsh)"
 
 # User configuration
 #theme
