@@ -33,7 +33,7 @@ edit = [
 	{ run = '${EDITOR:-nvim} "$@"', desc = "$EDITOR", block = true, for = "unix" },
 ]
 open = [
-	{ run = 'xdg-open "$1"',                desc = "Open", for = "linux" },
+	{ run = 'xdg-open "$1"', desc = "Open", for = "linux" },
 ]
 reveal = [
 	{ run = 'xdg-open "$(dirname "$1")"',           desc = "Reveal", for = "linux" },
@@ -49,7 +49,7 @@ play = [
 [open]
 rules = [
 	# Folder
-	{ name = "*/", use = [ "edit", "open", "reveal" ] },
+	{ name = "*/", use = [ "open", "reveal" ] },
 	# Text
 	{ mime = "text/*", use = [ "edit", "reveal" ] },
 	# Image
