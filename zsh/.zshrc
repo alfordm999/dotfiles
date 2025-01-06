@@ -14,9 +14,9 @@ alias nord='sudo systemctl start nordvpnd && nordvpn c Chicago'
 _comp_options+=(globdots)   #include hidden files
 
 #ZOXIDE
-alias cd=z
 eval "$(zoxide init zsh)"
 
+alias cd=z
 #FZF STUFF
 eval "$(fzf --zsh)"
 export FZF_DEFAULT_COMMAND="fd --hidden --strip-cwd-prefix --exclude .git "
