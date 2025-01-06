@@ -6,8 +6,7 @@ export ZSH="$HOME/.oh-my-zsh"
 export EDITOR="nvim"
 
 #ALIASES
-alias cz='yazi $(fzf -m --preview="bat --color=always {}")'
-alias scz='sudo nvim $(fzf -m --preview="bat --color=always {}")'
+alias y='yazi'
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
 alias nord='sudo systemctl start nordvpnd && nordvpn c Chicago'
@@ -19,6 +18,8 @@ eval "$(zoxide init zsh)"
 alias cd=z
 #FZF STUFF
 eval "$(fzf --zsh)"
+alias cz='yazi $(fzf -m --preview="bat --color=always {}")'
+alias scz='sudo nvim $(fzf -m --preview="bat --color=always {}")'
 export FZF_DEFAULT_COMMAND="fd --hidden --strip-cwd-prefix --exclude .git "
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 
