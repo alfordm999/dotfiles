@@ -1,12 +1,39 @@
-# If you come from bash you might have to change your $PATH.
 export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
 
+export BUN_DIR=$HOME/.data
+export CARGO_HOME=$HOME/.data
+export JAVA_USER_HOME=$HOME/.data
+export MAGEFILE=$HOME/.data
+export MONO_CONFIG=$HOME/.data
+export NPM_CONFIG_PREFIX=$HOME/.data
+export NPM_CONFIG_CACHE=$HOME/.data
+export MINECRAFT_HOME=$HOME/.data
+export MPUTILS_HOME=$HOME/.data
+export MOZ_USER_DIR=$HOME/.data
+export VIMFILES=$HOME/.data/.vim
+export GNUPGHOME=$HOME/.datME/.data
+export VSCODE_CONFIG_DIR=$HOME/.data
+export VSCODE_EXTENSIONS_DIR=$HOME/.data
+export VSCODE_OSS_DIR=$HOME/.data
+export PKI_DIR=$HOME/.data
+export W3M_DIR=$HOME/.data
+export YARN_CONFIG_DIR=$HOME/.data
+export YARN_GLOBAL_FOLDER=$HOME/.data
+export WG_CONFIG_DIR=$HOME/.data
+export GOPATH=$HOME/.data
+export SSH_AUTH_SOCK="$HOME/.data/.ssh/ssh-agent.sock"
+export SSH_CONFIG="$HOME/.data/.ssh/custom_config"
+export SSH_KEY_DIR="$HOME/.data/.ssh/keys"
+export SSH_KNOWN_HOSTS="$HOME/.data/.ssh/custom_known_hosts"
+
 # Path to your Oh My Zsh installation.
-export ZSH="$HOME/.oh-my-zsh"
+export ZSH="$HOME/.data/.oh-my-zsh"
+export ZSH_COMPDUMP="$HOME/.data/.oh-my-zsh/dumps"
 export EDITOR="nvim"
 
 #ALIASES
 alias y='yazi'
+alias vim='nvim'
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
 alias nord='sudo systemctl start nordvpnd && nordvpn c Chicago'
@@ -43,7 +70,11 @@ HYPHEN_INSENSITIVE="true"
 # or set a custom format using the strftime function format specifications,
 # see 'man strftime' for details.
 HIST_STAMPS="mm/dd/yyyy"
-
+HISTFILE="$HOME/.data/.zsh_history"
+HISTSIZE=10000
+SAVEHIST=10000
+HISTCONTROL="ignoredups:erasedups"
+HISTIGNORE="ls:cd:pwd:exit"
 # Would you like to use another custom folder than $ZSH/custom?
 # ZSH_CUSTOM=/path/to/new-custom-folder
 
