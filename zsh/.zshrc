@@ -53,7 +53,7 @@ export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 
 #ATUIN
 eval "$(atuin init zsh)"
-
+bindkey '^[[A' history-search-backward
 ZSH_THEME="agnoster"
 
 plugins=(git archlinux)
@@ -88,3 +88,5 @@ HISTIGNORE="ls:cd:pwd:exit"
 export EDITOR='nvim'
 
 fastfetch 
+
+. "$HOME/.atuin/bin/env"
