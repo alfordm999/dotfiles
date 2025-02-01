@@ -1,7 +1,6 @@
 export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
 
 export BUN_DIR=$HOME/.data
-export GIT_CONFIG=$XDG_CONFIG_HOME
 export CARGO_HOME=$HOME/.data
 export JAVA_USER_HOME=$HOME/.data
 export MAGEFILE=$HOME/.data
