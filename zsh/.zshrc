@@ -1,7 +1,7 @@
 export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
 
 export BUN_DIR=$HOME/.data
-#export TMUX_PLUGIN_MANAGER_PATH=$HOME/.data
+export TMUX_PLUGIN_MANAGER_PATH=$HOME/.data
 export NVIDIA_DRIVER_CAPABILITIES=$HOME/.data
 export CUDA_HOME=$HOME/.data
 export CUDA_PATH=$HOME/.data
