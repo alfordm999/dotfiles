@@ -1,6 +1,10 @@
 export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
 
 export BUN_DIR=$HOME/.data
+#export TMUX_PLUGIN_MANAGER_PATH=$HOME/.data
+export NVIDIA_DRIVER_CAPABILITIES=$HOME/.data
+export CUDA_HOME=$HOME/.data
+export CUDA_PATH=$HOME/.data
 export CARGO_HOME=$HOME/.data
 export JAVA_USER_HOME=$HOME/.data
 export MAGEFILE=$HOME/.data
@@ -12,25 +16,12 @@ export MPUTILS_HOME=$HOME/.data
 export MOZ_USER_DIR=$HOME/.data
 export VIMFILES=$HOME/.data/.vim
 export GNUPGHOME=$HOME/.datME/.data
-export VSCODE_CONFIG_DIR=$HOME/.data
-export VSCODE_EXTENSIONS_DIR=$HOME/.data
-export VSCODE_OSS_DIR=$HOME/.data
 export PKI_DIR=$HOME/.data
 export W3M_DIR=$HOME/.data
 export YARN_CONFIG_DIR=$HOME/.data
 export YARN_GLOBAL_FOLDER=$HOME/.data
 export WG_CONFIG_DIR=$HOME/.data
 export GOPATH=$HOME/.data
-
-export SSL_CERT_DIR=$HOME/.data
-export SSL_CERT_FILE=$HOME/.data
-export PKCS11_MODULE_PATH=$HOME/.data
-export X509_CERT_DIR=$HOME/.data
-export SSH_AUTH_SOCK=$HOME/.data
-export PKI_HOME=$HOME/.data
-export OPENSSL_CONF=$HOME/.data
-export NSS_DB=$HOME/.data
-
 
 export EDITOR='nvim'
 
@@ -41,6 +32,11 @@ export ZSH_COMPDUMP="$HOME/.data/.oh-my-zsh/dumps"
 
 #ALIASES
 alias y='yazi'
+alias sys='sudo systemctl status'
+alias syp='sudo systemctl stop'
+alias syt='sudo systemctl start'
+alias syd='sudo systemctl disable'
+alias sye='sudo systemctl enable'
 alias vim='nvim'
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
@@ -74,9 +70,5 @@ HISTSIZE=10000
 SAVEHIST=10000
 HISTCONTROL="ignoredups:erasedups"
 HISTIGNORE="ls:cd:pwd:exit"
-
-
-
-export EDITOR='nvim'
 
 fastfetch 
