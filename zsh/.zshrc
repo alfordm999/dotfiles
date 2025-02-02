@@ -32,6 +32,7 @@ export ZSH_COMPDUMP="$HOME/.data/.oh-my-zsh/dumps"
 
 #ALIASES
 alias y='yazi'
+alias ip='ip -c'
 alias sys='sudo systemctl status'
 alias syp='sudo systemctl stop'
 alias syt='sudo systemctl start'
