@@ -1,16 +1,17 @@
 * {
     border: none;
-    /* `ttf-font-awesome` is required to be installed for icons */
-    font-family: "JetBrainMono Nerd Font Bold";
-    /* adjust font-size value to your liking: */
-    font-size: 14px;
-  }
+    font-family: "JetBrainMono Nerd Font";
+    font-weight: bold;
+    font-size: 14;
+    border-radius: 0;
+    margin: 0px;
+    padding: 0px;
+    min-height: 0;  
+}
   
   window#waybar {
     background: rgba(0,0,0,0.9);
     color: #ffffff;
-    padding: 0px; 
-    margin: 0px;
   }
   
 
@@ -19,14 +20,12 @@
   }
   
   #workspaces button.active {
-    color: #1e1e2e;
-    background-color: #cdd6f4;
+    color: #000000;
+    background: #cdd6f4;
   }
   
   #workspaces button:hover {
-    box-shadow: inherit;
-    text-shadow: inherit;
-    color: #1e1e2e;
+    color: #000000;
     background-color: #cdd6f4;
   }
   
@@ -43,7 +42,7 @@
   #network,
   #clock,
   #tray{
-    padding: 5px 
+    margin-right: 10px;
   }
   #custom-power {
     margin-right: 6px;
@@ -51,33 +50,39 @@
   #memory {
     background-color: #000000;
     color: white;
-
+    margin-right: 10px;
   }
   #cpu {
     background-color: #000000;
     color: white;
+    margin-right: 10px;
   }
   
   #pulseaudio {
     background-color: #000000;
     color: white;
+    margin-right: 10px;
   }
   
   #network {
     background-color: #000000;
     color: white;
+    margin-right: 10px;
   }
   
   #clock {
     background-color: #000000;
     color: white;
+    margin-right: 10px;
   }
   
   #custom-power {
     background-color: #000000;
     color: white;
+    margin-right: 10px;
   }
   #custom-brightness {
     background-color: #000000;
     color: white;
+    margin-right: 10px;
   }
