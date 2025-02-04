@@ -1,19 +1,18 @@
 * {
     border: none;
-    /* `ttf-font-awesome` is required to be installed for icons */
     font-family: "JetBrainMono Nerd Font Bold";
-    /* adjust font-size value to your liking: */
     font-size: 14px;
+    min-height: 0;
+    padding: 0px; 
+    margin: 0px;
+    border-radius: 0px;
   }
   
   window#waybar {
     background: rgba(0,0,0,0.9);
     color: #ffffff;
-    padding: 0px; 
-    margin: 0px;
+    padding: 10px; 
   }
-  
-
   #workspaces button {
     color: #ffffff;
   }
@@ -43,7 +42,7 @@
   #network,
   #clock,
   #tray{
-    padding: 5px 
+    margin-right: 6px;
   }
   #custom-power {
     margin-right: 6px;
@@ -51,33 +50,49 @@
   #memory {
     background-color: #000000;
     color: white;
-
+    margin-right: 10px;
   }
   #cpu {
     background-color: #000000;
     color: white;
+    margin-right: 10px;
   }
   
+  #backlight{
+    background-color: #000000;
+    color: white;
+    margin-right: 10px;
+  }
+  #battery{
+    background-color: #000000;
+    color: white;
+    margin-right: 10px;
+  }
   #pulseaudio {
     background-color: #000000;
     color: white;
+    margin-right: 10px;
   }
   
   #network {
     background-color: #000000;
     color: white;
+    margin-right: 10px;
   }
   
   #clock {
     background-color: #000000;
     color: white;
+    margin-right: 10px;
   }
   
   #custom-power {
     background-color: #000000;
     color: white;
+    margin-right: 10px;
   }
   #custom-brightness {
     background-color: #000000;
     color: white;
+    margin-right: 10px;
   }
