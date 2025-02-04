@@ -1,5 +1,10 @@
 export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
 
+export M2_REPO=$HOME/.data
+export WINEPREFIX=$HOME/.data
+export SWT_HOME=$HOME/.data
+export REDHAT_HOME=$HOME/.data
+export VAR_HOME=$HOME/.data
 export BUN_DIR=$HOME/.data
 export TMUX_PLUGIN_MANAGER_PATH=$HOME/.data
 export NVIDIA_DRIVER_CAPABILITIES=$HOME/.data
