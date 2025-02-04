@@ -29,6 +29,9 @@ ueberzug_scale  = 1
 ueberzug_offset = [ 0, 0, 0, 0 ]
 
 [opener]
+cd= [
+	{ run = 'bash ~/.config/yazi/changedir.sh "$@"', desc = "CD", block = true, for = "unix" },
+]
 edit = [
 	{ run = '${EDITOR:-nvim} "$@"', desc = "$EDITOR", block = true, for = "unix" },
 ]
@@ -49,7 +52,7 @@ play = [
 [open]
 rules = [
 	# Folder
-	{ name = "*/", use = [ "open", "reveal" ] },
+	{ name = "*/", use = [ "cd", "open", "reveal" ] },
 	# Text
 	{ mime = "text/*", use = [ "edit", "reveal" ] },
 	# Image

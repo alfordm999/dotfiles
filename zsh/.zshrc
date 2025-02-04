@@ -51,6 +51,7 @@ alias cd=z
 alias code=vscodium
 _comp_options+=(globdots)   #include hidden files
 
+
 #ZOXIDE
 eval "$(zoxide init zsh)"
 
