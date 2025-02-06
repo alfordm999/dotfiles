@@ -1,6 +1,7 @@
 * {
     border: none;
-    font-family: "JetBrainMono Nerd Font Bold";
+    font-family: "JetBrainMono Nerd Font";
+    font-weight: bold;
     font-size: 14px;
     min-height: 0;
     padding: 0px; 
