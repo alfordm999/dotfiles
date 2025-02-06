@@ -38,6 +38,9 @@ edit = [
 open = [
 	{ run = 'xdg-open "$1"', desc = "Open", for = "linux" },
 ]
+view= [
+	{ run = 'loupe "$1"', desc = "Open", for = "linux" },
+]
 reveal = [
 	{ run = 'xdg-open "$(dirname "$1")"',           desc = "Reveal", for = "linux" },
 ]
@@ -56,7 +59,7 @@ rules = [
 	# Text
 	{ mime = "text/*", use = [ "edit", "reveal" ] },
 	# Image
-	{ mime = "image/*", use = [ "open", "reveal" ] },
+	{ mime = "image/*", use = [ "view", "reveal" ] },
 	# Media
 	{ mime = "{audio,video}/*", use = [ "play", "reveal" ] },
 	# Archive
