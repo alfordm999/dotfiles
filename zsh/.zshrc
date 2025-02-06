@@ -7,6 +7,7 @@ export REDHAT_HOME=$HOME/.data
 export VAR_HOME=$HOME/.data
 export BUN_DIR=$HOME/.data
 export TMUX_PLUGIN_MANAGER_PATH=$HOME/.data
+export TMUX_PLUGIN_MANAGER_DIR=$HOME/.data
 export NVIDIA_DRIVER_CAPABILITIES=$HOME/.data
 export CUDA_HOME=$HOME/.data
 export CUDA_PATH=$HOME/.data
