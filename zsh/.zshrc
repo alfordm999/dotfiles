@@ -39,8 +39,7 @@ export ZSH_COMPDUMP="$HOME/.data/.oh-my-zsh/dumps"
 #ALIASES
 alias y='yazi'
 alias gits='git status -s'
-alias gita='git add .'
-alias gitc='git commit -m'
+alias gitac='git add .; git commit -m'
 alias ip='ip -c'
 alias sys='sudo systemctl status'
 alias syp='sudo systemctl stop'

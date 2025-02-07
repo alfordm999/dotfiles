@@ -42,7 +42,7 @@
     "clock": {
         "tooltip-format": "{calendar}",
         "format-alt": "{:%a, %d %b %Y}",
-        "format": " {:%I:%M %p %m/%d/%Y}"
+        "format": "  {:%I:%M %p %m/%d/%Y}"
     },
 
     "temperature": {
@@ -98,14 +98,14 @@
     },
     "network": {
         "format-wifi": " {essid} ({signalStrength}%)",
-        "format-ethernet": "{ifname}: {ipaddr}/{cidr}",
+        "format-ethernet": " {ifname}: {ipaddr}/{cidr}",
         "format-linked": " {ifname} (No IP)",
         "format-disconnected": "Disconnected ",
         "format-alt": "{ifname}: {ipaddr}/{cidr}"
     },
     "pulseaudio#input": {
-        "format-source": "  {volume}%",
-        "format-source-muted": " off",
+        "format-source": " {volume}%",
+        "format-source-muted": "  off",
         "format": "{format_source}",
         "max-volume": 100,
         "on-click": "pactl set-source-mute @DEFAULT_SOURCE@ toggle",
@@ -119,9 +119,10 @@
             "default": ["", "", ""]
         },
         "scroll-step": 5, 
-        "format": "{icon}  {volume}%",
+        "format": "{icon} {volume}%",
         "format-muted": " {format_source}",
-        "on-click": "pavucontrol"
+        "on-click": "pavucontrol",
+        "ignored-sinks": ["Easy Effects Sink"]
     },
     "custom/power": {
         "format": "",
