@@ -28,6 +28,7 @@ export YARN_CONFIG_DIR=$HOME/.data
 export YARN_GLOBAL_FOLDER=$HOME/.data
 export WG_CONFIG_DIR=$HOME/.data
 export GOPATH=$HOME/.data
+export WINEDLLOVERRIDES="version=n,b"
 
 export EDITOR='nvim'
 

@@ -39,10 +39,13 @@ open = [
 	{ run = 'xdg-open "$1"', desc = "Open", for = "linux" },
 ]
 view= [
-	{ run = 'loupe "$1"', desc = "Open", for = "linux" },
+	{ run = 'loupe "$1"', desc = "View", for = "linux" },
+]
+read= [
+	{ run = 'zathura "$1"', desc = "Read", for = "linux" },
 ]
 reveal = [
-	{ run = 'xdg-open "$(dirname "$1")"',           desc = "Reveal", for = "linux" },
+	{ run = 'xdg-open "$(dirname "$1")"', desc = "Reveal", for = "linux" },
 ]
 extract = [
 	{ run = 'ya pub extract --list "$@"', desc = "Extract here", for = "unix" },
@@ -60,6 +63,8 @@ rules = [
 	{ mime = "text/*", use = [ "edit", "reveal" ] },
 	# Image
 	{ mime = "image/*", use = [ "view", "reveal" ] },
+  #pdfs
+	{ mime = "application/pdf", use = "read"},
 	# Media
 	{ mime = "{audio,video}/*", use = [ "play", "reveal" ] },
 	# Archive
