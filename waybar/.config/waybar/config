@@ -4,20 +4,20 @@
     "height": 5,
     "modules-left": [
         "hyprland/workspaces",
+        "custom/space",
         "hyprland/window"
         ],
     "modules-center": [
+        "clock",         
         ],
     "modules-right": [
         "tray",
-        "clock",         
         "network", 
         "backlight",
         "cpu",
         "memory",
         "pulseaudio",
         "pulseaudio#input",
-        "custom/brightness",
         "battery", 
         "custom/power"
         ],
@@ -97,9 +97,9 @@
         "tooltip": false
     },
     "network": {
-        "format-wifi": " {essid} ({signalStrength}%)",
-        "format-ethernet": " {ifname}: {ipaddr}/{cidr}",
-        "format-linked": " {ifname} (No IP)",
+        "format-wifi": "  {essid} ({signalStrength}%)",
+        "format-ethernet": "  {ifname}: {ipaddr}/{cidr}",
+        "format-linked": "  {ifname} (No IP)",
         "format-disconnected": "Disconnected ",
         "format-alt": "{ifname}: {ipaddr}/{cidr}"
     },
@@ -119,10 +119,13 @@
             "default": ["", "", ""]
         },
         "scroll-step": 5, 
-        "format": "{icon} {volume}%",
-        "format-muted": " {format_source}",
+        "format": "{icon}  {volume}%",
+        "format-muted": "  {format_source}",
         "on-click": "pavucontrol",
         "ignored-sinks": ["Easy Effects Sink"]
+    },
+    "custom/space": {
+        "format": "  "
     },
     "custom/power": {
         "format": "",

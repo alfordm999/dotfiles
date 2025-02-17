@@ -1,38 +1,7 @@
 export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
 
-export M2_REPO=$HOME/.data
-export WINEPREFIX=$HOME/.data
-export SWT_HOME=$HOME/.data
-export REDHAT_HOME=$HOME/.data
-export VAR_HOME=$HOME/.data
-export BUN_DIR=$HOME/.data
-export TMUX_PLUGIN_MANAGER_PATH=$HOME/.data
-export TMUX_PLUGIN_MANAGER_DIR=$HOME/.data
-export NVIDIA_DRIVER_CAPABILITIES=$HOME/.data
-export CUDA_HOME=$HOME/.data
-export CUDA_PATH=$HOME/.data
-export CARGO_HOME=$HOME/.data
-export JAVA_USER_HOME=$HOME/.data
-export MAGEFILE=$HOME/.data
-export MONO_CONFIG=$HOME/.data
-export NPM_CONFIG_PREFIX=$HOME/.data
-export NPM_CONFIG_CACHE=$HOME/.data
-export MINECRAFT_HOME=$HOME/.data
-export MPUTILS_HOME=$HOME/.data
-export MOZ_USER_DIR=$HOME/.data
-export VIMFILES=$HOME/.data/.vim
-export GNUPGHOME=$HOME/.datME/.data
-export PKI_DIR=$HOME/.data
-export W3M_DIR=$HOME/.data
-export YARN_CONFIG_DIR=$HOME/.data
-export YARN_GLOBAL_FOLDER=$HOME/.data
-export WG_CONFIG_DIR=$HOME/.data
-export GOPATH=$HOME/.data
-export WINEDLLOVERRIDES="version=n,b"
-
 export EDITOR='nvim'
 
-# Path to your Oh My Zsh installation.
 export ZSH_CUSTOM="$HOME/.data"
 export ZSH="$HOME/.data/.oh-my-zsh"
 export ZSH_COMPDUMP="$HOME/.data/.oh-my-zsh/dumps"
@@ -84,5 +53,34 @@ HISTCONTROL="ignoredups:erasedups"
 HISTIGNORE="ls:cd:pwd:exit"
 
 precmd() { print "" }
+
+export M2_REPO=$HOME/.data
+export WINEPREFIX=$HOME/.data
+export SWT_HOME=$HOME/.data
+export REDHAT_HOME=$HOME/.data
+export VAR_HOME=$HOME/.data
+export BUN_DIR=$HOME/.data
+export TMUX_PLUGIN_MANAGER_PATH=$HOME/.data
+export TMUX_PLUGIN_MANAGER_DIR=$HOME/.data
+export NVIDIA_DRIVER_CAPABILITIES=$HOME/.data
+export CUDA_HOME=$HOME/.data
+export CUDA_PATH=$HOME/.data
+export CARGO_HOME=$HOME/.data
+export JAVA_USER_HOME=$HOME/.data
+export MAGEFILE=$HOME/.data
+export MONO_CONFIG=$HOME/.data
+export NPM_CONFIG_PREFIX=$HOME/.data
+export NPM_CONFIG_CACHE=$HOME/.data
+export MINECRAFT_HOME=$HOME/.data
+export MPUTILS_HOME=$HOME/.data
+export MOZ_USER_DIR=$HOME/.data
+export VIMFILES=$HOME/.data/.vim
+export GNUPGHOME=$HOME/.data/.data
+export PKI_DIR=$HOME/.data
+export W3M_DIR=$HOME/.data
+export YARN_CONFIG_DIR=$HOME/.data
+export YARN_GLOBAL_FOLDER=$HOME/.data
+export WG_CONFIG_DIR=$HOME/.data
+export GOPATH=$HOME/.data
 
 fastfetch 
