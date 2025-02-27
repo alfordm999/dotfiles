@@ -17,12 +17,10 @@ function zle-keymap-select {
   esac
 }
 zle -N zle-keymap-select
-
 function zle-line-init {
   echo -ne '\e[6 q'  # Set cursor to beam on shell start
 }
 zle -N zle-line-init
-
 echo -ne '\e[6 q'  # Ensure cursor is reset when shell starts
 
 
@@ -45,7 +43,7 @@ alias nord='sudo systemctl start nordvpnd && nordvpn c Chicago'
 alias cd=z
 alias code=vscodium
 
-_comp_options+=(globdots)   #include hidden files
+_comp_options+=(globdots)
 HYPHEN_INSENSITIVE="true"
 HIST_STAMPS="mm/dd/yyyy"
 HISTFILE="$HOME/.data/.zsh_history"
@@ -59,6 +57,9 @@ plugins=(git archlinux)
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source /usr/share/zsh/plugins/zsh-autocomplete/zsh-autocomplete.plugin.zsh
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+
+#AUTOSUGGESTIONS
+bindkey '^E' autosuggest-accept
 
 #ZOXIDE
 eval "$(zoxide init zsh)"
