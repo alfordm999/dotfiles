@@ -61,7 +61,7 @@ source /usr/share/zsh/plugins/zsh-autocomplete/zsh-autocomplete.plugin.zsh
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 #AUTOSUGGESTIONS/COMPLETIONS
-bindkey '^E' autosuggest-accept
+bindkey '^E' menu-complete
 export ZSH_AUTOCOMPLETE_WIDGET_ASYNC="true"
 
 #ZOXIDE
