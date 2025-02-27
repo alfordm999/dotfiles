@@ -40,8 +40,10 @@ alias vim='nvim'
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
 alias nord='sudo systemctl start nordvpnd && nordvpn c Chicago'
-alias cd=z
-alias code=vscodium
+alias cd='z'
+alias code='vscodium'
+alias cz='yazi $(fzf -m --preview="bat --color=always {}")'
+alias scz='sudo nvim $(fzf -m --preview="bat --color=always {}")'
 
 _comp_options+=(globdots)
 HYPHEN_INSENSITIVE="true"
@@ -58,16 +60,15 @@ source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zs
 source /usr/share/zsh/plugins/zsh-autocomplete/zsh-autocomplete.plugin.zsh
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 
-#AUTOSUGGESTIONS
+#AUTOSUGGESTIONS/COMPLETIONS
 bindkey '^E' autosuggest-accept
+export ZSH_AUTOCOMPLETE_WIDGET_ASYNC="true"
 
 #ZOXIDE
 eval "$(zoxide init zsh)"
 
 #FZF STUFF
 eval "$(fzf --zsh)"
-alias cz='yazi $(fzf -m --preview="bat --color=always {}")'
-alias scz='sudo nvim $(fzf -m --preview="bat --color=always {}")'
 export FZF_DEFAULT_COMMAND="fd --hidden --strip-cwd-prefix --exclude .git "
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 
