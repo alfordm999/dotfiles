@@ -1,13 +1,35 @@
 export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
-
-export EDITOR='nvim'
-
 export ZSH_CUSTOM="$HOME/.data"
 export ZSH="$HOME/.data/.oh-my-zsh"
 export ZSH_COMPDUMP="$HOME/.data/.oh-my-zsh/dumps"
 
+ZSH_THEME="agnoster"
+precmd() { print "" }
+source $ZSH/oh-my-zsh.sh
+
+#VI MODE
+bindkey -v
+export KEYTIMEOUT=1
+function zle-keymap-select {
+  case $KEYMAP in
+    vicmd) echo -ne '\e[2 q' ;;  # Block cursor in Normal mode
+    viins|main) echo -ne '\e[6 q' ;;  # Beam cursor in Insert mode
+  esac
+}
+zle -N zle-keymap-select
+
+function zle-line-init {
+  echo -ne '\e[6 q'  # Set cursor to beam on shell start
+}
+zle -N zle-line-init
+
+echo -ne '\e[6 q'  # Ensure cursor is reset when shell starts
+
+
 #ALIASES
 alias y='yazi'
+alias p='paru'
+alias pfzf='paru -Slaq | fzf '
 alias gits='git status -s'
 alias gitac='git add .; git commit -m'
 alias ip='ip -c'
@@ -22,8 +44,21 @@ alias grep='grep --color=auto'
 alias nord='sudo systemctl start nordvpnd && nordvpn c Chicago'
 alias cd=z
 alias code=vscodium
-_comp_options+=(globdots)   #include hidden files
 
+_comp_options+=(globdots)   #include hidden files
+HYPHEN_INSENSITIVE="true"
+HIST_STAMPS="mm/dd/yyyy"
+HISTFILE="$HOME/.data/.zsh_history"
+HISTSIZE=100000
+SAVEHIST=100000
+HISTCONTROL="ignoredups:erasedups"
+HISTIGNORE="ls:cd:pwd:exit"
+
+#PLUGINS
+plugins=(git archlinux)
+source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /usr/share/zsh/plugins/zsh-autocomplete/zsh-autocomplete.plugin.zsh
+source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 #ZOXIDE
 eval "$(zoxide init zsh)"
@@ -35,25 +70,8 @@ alias scz='sudo nvim $(fzf -m --preview="bat --color=always {}")'
 export FZF_DEFAULT_COMMAND="fd --hidden --strip-cwd-prefix --exclude .git "
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 
-ZSH_THEME="agnoster"
-
-plugins=(git archlinux)
-source $ZSH/oh-my-zsh.sh
-source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source /usr/share/zsh/plugins/zsh-autocomplete/zsh-autocomplete.plugin.zsh
-source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
-
-HYPHEN_INSENSITIVE="true"
-
-HIST_STAMPS="mm/dd/yyyy"
-HISTFILE="$HOME/.data/.zsh_history"
-HISTSIZE=10000
-SAVEHIST=10000
-HISTCONTROL="ignoredups:erasedups"
-HISTIGNORE="ls:cd:pwd:exit"
-
-precmd() { print "" }
-
+#ENV VARS
+export EDITOR='nvim'
 export M2_REPO=$HOME/.data
 export WINEPREFIX=$HOME/.data
 export SWT_HOME=$HOME/.data
