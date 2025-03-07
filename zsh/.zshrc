@@ -44,6 +44,7 @@ alias cd='z'
 alias code='vscodium'
 alias cz='yazi $(fzf -m --preview="bat --color=always {}")'
 alias scz='sudo nvim $(fzf -m --preview="bat --color=always {}")'
+alias ka='killall'
 
 _comp_options+=(globdots)
 HYPHEN_INSENSITIVE="true"
