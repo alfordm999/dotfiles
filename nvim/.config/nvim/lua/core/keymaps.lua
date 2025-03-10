@@ -5,6 +5,11 @@ vim.wo.number = true
 vim.wo.relativenumber = true
 vim.opt.termguicolors = true
 
+vim.keymap.set("n", "d", '"_d', { noremap = true })
+vim.keymap.set("n", "D", '"_D', { noremap = true })
+vim.keymap.set("n", "c", '"_c', { noremap = true })
+vim.keymap.set("n", "C", '"_C', { noremap = true })
+
 vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
 

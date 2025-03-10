@@ -23,8 +23,14 @@
         ],
      "hyprland/workspaces": {
          "disable-scroll": true,
-         "all-outputs": true,
-         "format": "{id}",
+         "all-outputs": false,
+         "format-icons": ["{id}", "{id}"],
+         "on-click": "hyprctl dispatch workspace {id}",
+         "on-output": true,
+         "ws-sort": "true",
+         "ws-order": "ascending",
+         "ws-rename": true,
+         "format": " {id} "
      },
     "memory": {
         "interval": 5,
