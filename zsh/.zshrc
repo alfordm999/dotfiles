@@ -1,11 +1,3 @@
-export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
-export ZSH_CUSTOM="$HOME/.data"
-export ZSH="$HOME/.data/.oh-my-zsh"
-export ZSH_COMPDUMP="$HOME/.data/.oh-my-zsh/dumps"
-ZSH_THEME="agnoster"
-precmd() { print "" }
-source $ZSH/oh-my-zsh.sh
-
 #VI MODE
 bindkey -v
 export KEYTIMEOUT=1
@@ -21,7 +13,6 @@ function zle-line-init {
 }
 zle -N zle-line-init
 echo -ne '\e[6 q'  # Ensure cursor is reset when shell starts
-
 
 #ALIASES
 alias y='yazi'
@@ -45,6 +36,7 @@ alias cz='yazi $(fzf -m --preview="bat --color=always {}")'
 alias scz='sudo nvim $(fzf -m --preview="bat --color=always {}")'
 alias ka='killall'
 
+#CONFIG
 _comp_options+=(globdots)
 HYPHEN_INSENSITIVE="true"
 HIST_STAMPS="mm/dd/yyyy"
@@ -53,15 +45,22 @@ HISTSIZE=100000
 SAVEHIST=100000
 HISTCONTROL="ignoredups:erasedups"
 HISTIGNORE="ls:cd:pwd:exit"
+setopt prompt_subst
+source ~/.zplug/repos/agnoster/agnoster-zsh-theme/agnoster.zsh-theme
 
 #PLUGINS
-plugins=(git archlinux)
-source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source /usr/share/zsh/plugins/zsh-autocomplete/zsh-autocomplete.plugin.zsh
-source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+source ~/.zplug/init.zsh
+zplug "agnoster/agnoster-zsh-theme"
+zplug "zsh-users/zsh-syntax-highlighting"
+zplug "zsh-users/zsh-autosuggestions"
+zplug "zsh-users/zsh-completions"
+zplug "marlonrichert/zsh-autocomplete"
+if ! zplug check --verbose; then
+    zplug install
+fi
+zplug load
 
 #AUTOSUGGESTIONS/COMPLETIONS
-bindkey '^E' autosuggest-accept
 export ZSH_AUTOCOMPLETE_WIDGET_ASYNC="true"
 
 #ZOXIDE
@@ -73,6 +72,9 @@ export FZF_DEFAULT_COMMAND="fd --hidden --strip-cwd-prefix --exclude .git "
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 
 #ENV VARS
+export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
+export ZSH_CUSTOM="$HOME/.data"
+precmd() { print "" }
 export EDITOR='nvim'
 export M2_REPO=$HOME/.data
 export WINEPREFIX=$HOME/.data
