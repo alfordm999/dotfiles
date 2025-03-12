@@ -2,7 +2,6 @@ export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
 export ZSH_CUSTOM="$HOME/.data"
 export ZSH="$HOME/.data/.oh-my-zsh"
 export ZSH_COMPDUMP="$HOME/.data/.oh-my-zsh/dumps"
-
 ZSH_THEME="agnoster"
 precmd() { print "" }
 source $ZSH/oh-my-zsh.sh
