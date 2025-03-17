@@ -18,8 +18,8 @@ echo -ne '\e[6 q'  # Ensure cursor is reset when shell starts
 alias y='yazi'
 alias p='paru'
 alias pfzf='paru -Slaq | fzf '
-alias gits='git status -s'
-alias gitac='git add .; git commit -m'
+alias gs='git status -s'
+alias gac='git add .; git commit -m'
 alias ip='ip -c'
 alias sys='systemctl status'
 alias syp='sudo systemctl stop'
@@ -47,6 +47,7 @@ HISTCONTROL="ignoredups:erasedups"
 HISTIGNORE="ls:cd:pwd:exit"
 setopt prompt_subst
 source ~/.zplug/repos/agnoster/agnoster-zsh-theme/agnoster.zsh-theme
+precmd() { print "" }
 
 #PLUGINS
 source ~/.zplug/init.zsh
@@ -74,7 +75,6 @@ export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 #ENV VARS
 export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
 export ZSH_CUSTOM="$HOME/.data"
-precmd() { print "" }
 export EDITOR='nvim'
 export M2_REPO=$HOME/.data
 export WINEPREFIX=$HOME/.data
