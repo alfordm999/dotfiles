@@ -35,6 +35,7 @@ alias code='vscodium'
 alias cz='yazi $(fzf -m --preview="bat --color=always {}")'
 alias scz='sudo nvim $(fzf -m --preview="bat --color=always {}")'
 alias ka='killall'
+alias xvpn='sudo xvpn connect'
 
 #CONFIG
 _comp_options+=(globdots)
