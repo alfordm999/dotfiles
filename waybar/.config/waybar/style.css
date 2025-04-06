@@ -1,6 +1,6 @@
 * {
     border: none;
-    font-family: "JetBrainMono Nerd Font";
+    font-family: "Clarity City";
     font-weight: bold;
     font-size: 14px;
     min-height: 0;
@@ -8,10 +8,9 @@
     margin: 0px;
     border-radius: 0px;
   }
-  
   window#waybar {
     background: rgba(0,0,0,0.9);
-    color: #ffffff;
+    color: #cba6f7;
   }
   #workspaces button {
     color: #ffffff;
@@ -43,56 +42,63 @@
   #clock,
   #tray{
     margin-right: 6px;
-  }
-  #custom-power {
-    margin-right: 6px;
+    color: #ffffff;
   }
   #memory {
     background-color: #000000;
     color: white;
     margin-right: 10px;
+    color: #89dceb;
   }
   #cpu {
     background-color: #000000;
     color: white;
     margin-right: 10px;
+    color: #a6e3a1;
   }
   
   #backlight{
     background-color: #000000;
     color: white;
     margin-right: 10px;
+    color: #ffffff;
   }
   #battery{
     background-color: #000000;
     color: white;
     margin-right: 10px;
+    color: #ffffff;
   }
   #pulseaudio {
     background-color: #000000;
     color: white;
     margin-right: 10px;
+    color: #fab387;
   }
   
   #network {
     background-color: #000000;
     color: white;
     margin-right: 10px;
+    color: #cba6f7;
   }
   
   #clock {
     background-color: #000000;
     color: white;
     margin-right: 10px;
+    color: #f2cdcd;
   }
   
   #custom-power {
     background-color: #000000;
     color: white;
     margin-right: 10px;
+    color: #f38ba8;
   }
   #custom-brightness {
     background-color: #000000;
     color: white;
     margin-right: 10px;
+    color: #ffffff;
   }
