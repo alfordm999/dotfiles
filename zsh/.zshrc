@@ -36,6 +36,8 @@ alias cz='yazi $(fzf -m --preview="bat --color=always {}")'
 alias scz='sudo nvim $(fzf -m --preview="bat --color=always {}")'
 alias ka='killall'
 alias xvpn='sudo xvpn connect'
+alias pas='pactl set-default-sink alsa_output.pci-0000_01_00.1.hdmi-surround71'
+alias pah='pactl set-default-sink alsa_output.usb-FIIO_FiiO_K11-01.iec958-stereo'
 
 #CONFIG
 _comp_options+=(globdots)
