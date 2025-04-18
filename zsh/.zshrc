@@ -39,6 +39,11 @@ alias ka='killall'
 alias xvpn='sudo xvpn connect'
 alias pas='pactl set-default-sink alsa_output.pci-0000_01_00.1.hdmi-surround71'
 alias pah='pactl set-default-sink alsa_output.usb-FIIO_FiiO_K11-01.iec958-stereo'
+alias rebuild='sudo nixos-rebuild switch --flake /etc/nixos/'
+alias nixconf='sudo nvim /etc/nixos/configuration.nix'
+alias nixflake='sudo nvim /etc/nixos/flake.nix'
+alias nixpkgs='sudo nvim /etc/nixos/packages.nix'
+alias nixhome='sudo nvim /etc/nixos/home.nix'
 
 #CONFIG
 _comp_options+=(globdots)
